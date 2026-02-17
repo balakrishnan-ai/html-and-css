@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display & Positioning</title>
+    <style>
+        /* --Display --- */
+        .inline-example span {
+            display: inline;
+            background: lightblue;
+            margin: 5px;
+        }
+
+        .block-example p {
+            display: block;
+            background: lightgreen;
+            margin: 5px 0;
+        }.inline-block-example button {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+        }.hidden{
+            display:none;
+        }
+        /* Visibility */
+        .invisible{
+            visibility: hidden;
+        }
+        /* Position */
+        .relative{
+            position: relative;
+            left: 40px;
+            top:10px;
+            background:lightpink;
+            padding:10px;
+        }.absolute{
+            position:absolute;
+            top:60px;
+            left:40px;
+            background:lightyellow;
+            padding:10px;
+        }.fixed{
+            position:fixed;
+            bottom:10px;
+            right:10px;
+            background:orange;
+            padding:10px;
+        }.sticky{
+            position: sticky;
+            top: 0;
+            background: violet;
+            padding:10px;
+        }
+        /* Z-index */
+        .z1{
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            background: red;
+            color: white;
+            padding: 10px;
+            z-index:1;
+        }.z2{
+            position:absolute;
+            top:170px;
+            left:70px;
+            background: blue;
+            color: white;
+            padding: 10px;
+            z-index:2;
+        }
+        /* Overflow */
+        .overflow-box{
+            width:200px;
+            height:60px;
+            border:1px solid black;
+            overflow:auto;
+            margin-top:100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1 . Display Property</h2>
+    <div class="inline-example"><span>Inline 1</span><span>Inline 2</span></div>
+    <div class="block-example">
+        <p>Block element 1</p>
+        <p>Block element 2</p>
+    </div>
+    <div class="inline-block-example">
+        <button>Button 1</button>
+        <button>Button 2</button>
+    </div>
+    <p class="hidden">This text is hidden (display:none)</p>
+    <h2>2. Visibility</h2>
+    <p class="invisible">This is invisible but space is reserved (visibility:hidden)</p>
+    <h2>3. Position Property</h2>
+    <div class="relative">Relative Box</div>
+    <div class="absolute">Absolute Box</div>
+    <div class="sticky">Sticky Header (scroll to test)</div>
+    <div class="fixed">Fixed Box (bottom-right)</div>
+    <h2>4. Z-index</h2>
+    <div class="z1">Box 1 (z-index:1)</div>
+    <div class="z2">Box 2 (z-index:2, on top)</div>
+    <h2>5. Overflow</h2>
+    <div class="overflow-box">This is a long text that will overflow the box. Scrollbars will appear when needed,
+        because we set overflow: auto. Try resizing the text box to see effect.</div>
+</body>
+
+</html>

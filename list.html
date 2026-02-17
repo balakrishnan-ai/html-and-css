@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css List</title>
+    <style>
+        /* Different list styles */
+        ul.square{
+            list-style-type: square;
+        }ul.circle{
+            list-style-type:circle;
+        }ol.roman{
+            list-style-type:upper-roman;
+        }
+        /* Custom list icon */
+        ul.custom{
+            list-style-image: url(https://media1.tenor.com/m/j5YdKzezcnoAAAAd/anime.gif);
+        }
+        /* inside vs outside */
+        ul.inside{
+            list-style-position: inside;
+        }ul.outside{
+            list-style-position:outside;
+        }
+    </style>
+</head>
+<body>
+    <h2>Unordered List</h2>
+    <ul class="square">
+        <li>Square Bullet</li>
+        <li>Square Bullet</li>
+    </ul>
+    <ul class="circle">
+        <li>Circle Bullet</li>
+        <li>Circle Bullet</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol class="roman">
+        <li>Roman Style</li>
+        <li>Roman Style</li>
+    </ol>
+    <h2>Custom Icon List</h2>
+    <ul class="custom">
+        <li>Custom Icon</li>
+        <li>Custom Icon</li>
+    </ul>
+    <h2>List Position</h2>
+    <ul class="inside">
+        <li>Inside Position</li>
+        <li>Inside Position</li>
+    </ul>
+    <ul class="outside">
+        <li>Outside Position</li>
+        <li>Outside Position</li>
+    </ul>
+</body>
+</html>

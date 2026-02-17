@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Unit and Measure</title>
+    <style>
+        html{
+            font-size:16px;
+        }.px-example{
+            font-size:20px;
+            background: lightblue;
+        }.em-example{
+            font-size:2em;
+            background:lightgreen;
+        }.percent-example{
+            width:50%;
+            background:lightyellow;
+        }.rem-example{
+            font-size:2rem;
+            background:lightpink;
+        }.vw-vh-example{
+            width:50vw;
+            height:20vh;
+            background:orange;
+        }.minmax-example{
+            width:80%;
+            min-width:200px;
+            max-width:600px;
+            height:100px;
+            background:violet;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Units & Measurements</h2>
+    <p class="px-example">This text uses 20px font-size(absolute)</p>
+    <div class="" style="font-size:10px;">
+        <p class="em-example">This text is 2ex = 20px (relative to parent).</p>
+    </div>
+    <p class="rem-example">This text is 2rem = 32px (relative to root).</p>
+    <div class="percent-example">This box is 50% width of parent.</div>
+    <div class="vw-vh-example">This box is 50vw x 20vh (relative to screen).</div>
+    <div class="minmax-example">This box has min-width 200px,max-width 600px.</div>
+</body>
+</html>
