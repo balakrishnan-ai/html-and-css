@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Underline Slide Effect</title>
+    <style>
+        a{
+            position:relative;
+            color:black;
+            text-decoration:none;
+            font-size:20px;
+        }a::after{
+            content:"";
+            position:absolute;
+            width:0;
+            height:2px;
+            bottom:0;
+            left:0;
+            background-color:red;
+            transition:width 0.3s;
+        }a:hover::after{width:100%;}
+    </style>
+</head>
+<body>
+    <a href="http://#">Hover Over Me</a>
+</body>
+</html>

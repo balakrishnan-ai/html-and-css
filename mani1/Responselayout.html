@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction:row;
+        }.box{
+            flex:1;
+            padding:20px;
+            margin:5px;
+            background:lightcoral;
+        }
+        @media(max-width:600px){
+            .container{flex-direction:column-reverse;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>
